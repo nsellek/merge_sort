@@ -11,3 +11,19 @@ void print_arr(int*, int);
 int main(void){
 
   }
+
+  int get_number(){
+    char buf[BUFSIZ];
+    char *p;
+    long int i;
+
+    fgets(buf, sizeof(buf), stdin);
+    i = strtol(buf, &p, 10);
+
+    if(buf[0] != '\n' && (*p == '\n' || *p == '\0')) {
+      if(i > 0) return i;
+    }
+
+    printf("Enter only numbers greater than 0: ");
+    return get_number();
+  }
