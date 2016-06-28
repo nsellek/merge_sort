@@ -10,6 +10,9 @@ void print_arr(int*, int);
 
 int main(void){
 
+  printf("Enter size of array: ");
+  int size = get_number();
+  
   }
 
   int get_number(){
