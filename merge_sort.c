@@ -15,8 +15,8 @@ int main(void){
 
   int arr[size];
   fill_array(arr, size);
-  printf("Original arry: ");
-  print_arr(arr, size);
+  // printf("Original arry: ");
+  // print_arr(arr, size);
   mergeSort(arr, 0, size);
   printf("Sorted array: ");
   print_arr(arr, size);
@@ -89,7 +89,8 @@ void fill_array(int* arr, int size){
     i = strtol(buf, &p, 10);
 
     if(buf[0] != '\n' && (*p == '\n' || *p == '\0')) {
-      if(i > 0) return i;
+      // if(i > 0)
+      return i;
     }
 
     printf("Enter only numbers greater than 0: ");
