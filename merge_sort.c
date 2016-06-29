@@ -19,8 +19,26 @@ int main(void){
 
 
 
-  
+
+}
+
+void print_arr(int* arr, int size){
+  printf("[");
+  for(int i = 0; i < size; i++){
+    if(i < size-1){
+      printf("%d, ", arr[i]);
+    }else{
+      printf("%d]\n", arr[i]);
+    }
   }
+}
+
+void fill_array(int* arr, int size){
+  for(int i = 0; i < size; i++){
+    printf("Enter element for %d index: ", i);
+    arr[i] = get_number();
+  }
+}
 
   int get_number(){
     char buf[BUFSIZ];
