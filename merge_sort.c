@@ -10,7 +10,7 @@ void print_arr(int*, int);
 
 int main(void){
 
-  printf("Enter size of array: ");
+  // printf("Enter size of array: ");
   int size = get_number();
 
   int arr[size];
@@ -75,7 +75,7 @@ void print_arr(int* arr, int size){
 
 void fill_array(int* arr, int size){
   for(int i = 0; i < size; i++){
-    printf("Enter element for %d index: ", i);
+    // printf("Enter element for %d index: ", i);
     arr[i] = get_number();
   }
 }
