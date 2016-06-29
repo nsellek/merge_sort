@@ -17,9 +17,19 @@ int main(void){
   fill_array(arr, size);
   print_arr(arr, size);
 
+  mergeSort(arr, 0, size);
+  print_arr(arr, size);
 
+}
 
-
+void mergeSort(int* arr, int l, int r){
+  if(l < r){
+    int m = l + (r-l)/2;
+    printf("%d\n", m);
+    mergeSort(arr, l, m);
+    mergeSort(arr, m+1, r);
+    merge(arr, l, m, r);
+  }
 }
 
 void print_arr(int* arr, int size){
