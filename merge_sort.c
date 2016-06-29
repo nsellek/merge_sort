@@ -15,7 +15,10 @@ int main(void){
 
   int arr[size];
   fill_array(arr, size);
+  printf("Original arry: ");
+  print_arr(arr, size);
   mergeSort(arr, 0, size);
+  printf("Sorted array: ");
   print_arr(arr, size);
 
 }
