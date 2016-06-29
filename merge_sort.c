@@ -36,7 +36,7 @@ void merge(int* a, int low, int mid, int high){
   elements(second_half, a, mid+1, size2);
   i = j = 0;
   k = low;
-  while(i<size1 || j<size2)  // Merge the two halves
+  while(i<size1 || j<size2)
   {
     if(i >= size1){
       a[k++] = second_half[j++];
