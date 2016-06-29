@@ -12,6 +12,13 @@ int main(void){
 
   printf("Enter size of array: ");
   int size = get_number();
+
+  int arr[size];
+  fill_array(arr, size);
+  print_arr(arr, size);
+
+
+
   
   }
 
